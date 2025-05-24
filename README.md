@@ -28,10 +28,10 @@ EDA_ZONAS_VERDES/
 ├── img_zonas_verdes/                      # Gráficos y visualizaciones
 └── jupiter_zonas_verdes/                  # Notebook del análisis principal
 
-📊 Datos Analizados
+📊 Datos Analizados ((ORDENAR))
 
-*Superficie agricola_porcentaje_superficie total -- Superficie agrícola
-*Superficie forestal publica_porcentaje_superficie forestal total -- Superficie forestal publica
+*Superficie agricola_porcentaje_superficie total -- Porcentaje de uso agrícola
+*Superficie forestal publica_porcentaje_superficie forestal total -- Porcentaje de superficie forestal total
 *Superficie forestal_porcentaje_superficie total -- Superficie forestal
 *Superficie municipal de especial proteccion_porcentaje_ superficie total -- Superficie protegida
 *Superficie ocupada por parques y jardines o zonas verdes urbanas_metros por persona -- Supeficie zonas verdes
@@ -58,3 +58,5 @@ Identificación de patrones territoriales en la distribución de zonas verdes
 Comparativas entre provincias
 
 Visualizaciones que reflejen áreas con mayor protección ambiental y uso del suelo
+
+Priorización de zonas con necesidad de mayor protección o reforestación
