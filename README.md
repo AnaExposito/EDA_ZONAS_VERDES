@@ -2,6 +2,9 @@
 Autor: [Ana Expósito]
 Fecha: Mayo 2025
 
+![Vista del caserío Urrutia en Atxondo](caserio_urrutia_atxondo_1-1.jpg)
+
+
 🌟 Descripción del Proyecto
 Este proyecto presenta un análisis exploratorio de datos (EDA) sobre la distribución de zonas verdes en el País Vasco. Se analiza información oficial de indicadores municipales sobre espacios naturales, zonas agrarias, áreas forestales y jardines urbanos, con datos proporcionados por el Gobierno Vasco.
 
