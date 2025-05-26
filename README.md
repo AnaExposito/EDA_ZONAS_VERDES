@@ -8,7 +8,7 @@
 
 Este proyecto presenta un análisis exploratorio de datos (EDA) sobre la distribución de zonas verdes en el País Vasco. Se analiza información oficial de indicadores municipales sobre espacios naturales, zonas agrarias, áreas forestales y jardines urbanos, con datos proporcionados por el Gobierno Vasco.
 
-El objetivo principal es comprender cómo varía la presencia de espacios verdes entre las tres provincias (Álava, Bizkaia y Gipuzkoa), y si existen diferencias relevantes en cuanto a superficie protegida, masa forestal o uso agrícola.
+El objetivo principal es comprender la presencia de espacios verdes entre las tres provincias (Álava, Bizkaia y Gipuzkoa), y si existen diferencias relevantes en cuanto a superficie protegida, masa forestal o uso agrícola.
 
 
         🌿 Hipótesis principal
