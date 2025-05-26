@@ -2,7 +2,7 @@
 Autor: [Ana Expósito]
 Fecha: Mayo 2025
 
-![Vista del caserío Urrutia en Atxondo](/EDA_ZONAS_VERDES/img_zonas_verdes/caserio_urrutia_atxondo_1-1.jpg)
+![Vista del caserío Urrutia en Atxondo](/img_zonas_verdes/caserio_urrutia_atxondo_1-1.jpg)
 
 
 🌟 Descripción del Proyecto
