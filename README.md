@@ -1,4 +1,4 @@
-        🌿 README: Análisis Exploratorio de Zonas Verdes en el País Vasco
+        🌿 README: Análisis exploratorio de zonas verdes en el País Vasco
 
 
 ![Vista del caserío Urrutia en Atxondo](/img_zonas_verdes/caserio_urrutia_atxondo_1-1.jpg)
@@ -16,7 +16,6 @@ El objetivo principal es comprender la presencia de espacios verdes entre las tr
 
 
         🌿 Hipótesis secundarias
-¿Cuál es la capital más verde del País Vasco?
 
 ¿Qué provincia tiene mayor masa forestal?
 
@@ -27,7 +26,7 @@ El objetivo principal es comprender la presencia de espacios verdes entre las tr
 
         🌿 Estructura del Proyecto
 
-EDA_ZONAS_VERDES/
+EDA_ZONAS_VERDES
 ├── data_zonas_verdes/                     # Bases de datos en CSV
 ├── img_zonas_verdes/                      # Gráficos y visualizaciones
 └── jupiter_zonas_verdes/                  # Notebook del análisis principal
@@ -53,17 +52,17 @@ https://www.euskadi.eus/gobierno-vasco/-/indicadores-municipales-de-sostenibilid
         🌿 Herramientas utilizadas:
 
 Phyton -- Lenguaje de programación, para análisis de información
-Pandas -- Análisis de datos
-Numpy -- Operaciones numéricas
-Matplotlib -- Visualización de gráficos
-Seaborn -- Visualización de gráficos avanzada
+Pandas -- Librería, análisis de datos
+Numpy -- Librería, operaciones numéricas
+Matplotlib -- Librería, visualización de gráficos
+Seaborn -- Librería, visualización de gráficos avanzada
 
 
         🌿 Resultados esperados:
 
-- Identificación de patrones territoriales en la distribución de zonas verdes.
-- Comparativas entre provincias.
-- Visualizaciones que reflejen áreas con mayor protección ambiental y uso del suelo.
+- Identificación de patrones en la distribución de zonas verdes.
+- Comparativa entre provincias y análisis de posibles causas de las variables.
+- Visualizaciones que reflejen áreas con mayor protección ambiental.
 - Priorización de zonas con necesidad de mayor protección o reforestación.
 
 
@@ -71,7 +70,6 @@ Seaborn -- Visualización de gráficos avanzada
 
 - ¿Es Álava la provincia más verde del País Vasco?
 - ¿Cómo es la superficie mayoritaria en cada provincia?
-- ¿Cuál es la capital más?
 - ¿Cuál tiene más masa forestal?
 - ¿Y la más agraria?
 
