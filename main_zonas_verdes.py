@@ -222,7 +222,6 @@ plt.ylabel("Porcentaje %")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -246,7 +245,6 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.xlabel("Año")
     plt.ylabel("%" if "por persona" not in titulo else "m²/persona")
 plt.tight_layout()
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes persona.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -270,7 +268,6 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.xlabel("Año")
     plt.ylabel("%" if "por persona" not in titulo else "m²/persona")
 plt.tight_layout()
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes persona 2.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -291,7 +288,6 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.title(titulo)
     plt.xlabel("Año")
 plt.tight_layout()
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'grafico zonas especial proteccion.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -350,7 +346,6 @@ plt.pie(valores, labels=provincias, autopct='%1.1f%%', startangle=90, colors=['g
 plt.title("Superficie forestal por provincia (2023)")
 
 plt.tight_layout()
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'grafico forestal.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -393,8 +388,6 @@ plt.title("Superficie del uso del suelo por provincia (2023)")
 plt.ylabel("Superficie")
 plt.xlabel("Provincia")
 plt.legend(title="Tipo de Suelo")
-
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'usos de suelo.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -412,7 +405,6 @@ sns.heatmap(cor_matrix,annot=True,cmap="BrBG",center=0, vmin=-1,vmax=1)
 plt.title("Matriz de correlación entre usos del suelo (2023)")
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0) 
-plt.show()
 nombre_archivo_grafico_zonas_verdes = 'matriz de correlacion.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)
@@ -428,7 +420,6 @@ plt.title("Promedio de superficie protegida por provincia")
 plt.xlabel("Superficie protegida")
 plt.ylabel("Provincia") 
 plt.tight_layout()
-plt.show()
 pnombre_archivo_grafico_zonas_verdes = 'grafico especial proteccion.png'
 ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
 plt.savefig(ruta_guardado_grafico_zonas_verdes)

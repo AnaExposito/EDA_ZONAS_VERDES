@@ -64,7 +64,7 @@ Seaborn -- Librería, visualización de gráficos avanzada
 
 - Identificación de patrones en la distribución de zonas verdes.
 - Comparativa entre provincias y análisis de posibles causas de las variables.
-- Visualizaciones que reflejen áreas con mayor protección ambiental.
+- Visualizaciones que reflejen las áreas con mayor protección ambiental.
 - Priorización de zonas con necesidad de mayor protección o reforestación.
 
 
