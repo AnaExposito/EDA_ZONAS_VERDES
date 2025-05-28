@@ -5,8 +5,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-carpeta_graficos = 'graficos_zonas_verdes'
-
+carpeta_graficos = 'graficos_eda_zonas_verdes'
+os.makedirs(carpeta_graficos, exist_ok=True)
 
 print ("Zonas verdes en el País Vasco")
 
@@ -223,6 +223,13 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
+
+
+
 
 #tendencias zonas verdes
 provincias = ['Araba/Álava', 'Bizkaia', 'Gipuzkoa']
@@ -240,6 +247,10 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.ylabel("%" if "por persona" not in titulo else "m²/persona")
 plt.tight_layout()
 plt.show()
+nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes persona.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 #tendencia superficie forestal
 provincias = ['Araba/Álava', 'Bizkaia', 'Gipuzkoa']
@@ -260,7 +271,10 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.ylabel("%" if "por persona" not in titulo else "m²/persona")
 plt.tight_layout()
 plt.show()
-
+nombre_archivo_grafico_zonas_verdes = 'grafico zonas verdes persona 2.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 #tendencia superficie especial proteccion
 provincias = ['Araba/Álava', 'Bizkaia', 'Gipuzkoa']
@@ -278,14 +292,15 @@ for i, (titulo, df) in enumerate(dfs.items(), 1):
     plt.xlabel("Año")
 plt.tight_layout()
 plt.show()
-
-
+nombre_archivo_grafico_zonas_verdes = 'grafico zonas especial proteccion.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 
 
 años = ['2018', '2019', '2020', '2021', '2022', '2023']
 
-# 1. Cargar los CSVs (sin extensión)
 superficie_agricola = pd.read_csv('supeficie_agricola_provincias', index_col='provincia')
 superficie_forestal = pd.read_csv('superficie_forestal_provinincia', index_col='provincia')
 superficie_forestal_publica = pd.read_csv('superficie_forestal_publica_provincias', index_col='provincia')
@@ -297,7 +312,7 @@ superficie_forestal = superficie_forestal[años].rename(columns=lambda x: f'sup_
 superficie_forestal_publica = superficie_forestal_publica[años].rename(columns=lambda x: f'sup_forestal_publica_{x}')
 especial_proteccion = especial_proteccion[años].rename(columns=lambda x: f'esp_proteccion_{x}')
 
-# 3. Concatenar todo horizontalmente por provincia
+
 datos_actualizados = pd.concat([
     superficie_agricola,
     superficie_forestal,
@@ -306,7 +321,6 @@ datos_actualizados = pd.concat([
 ], axis=1)
 datos_actualizados.reset_index(inplace=True)
 
-# 4. Guardar a CSV
 datos_actualizados.to_csv('datos_2018_2023_provincias.csv')
 
 print("Archivo guardado como 'datos_2018_2023_provincias.csv'")
@@ -337,6 +351,10 @@ plt.title("Superficie forestal por provincia (2023)")
 
 plt.tight_layout()
 plt.show()
+nombre_archivo_grafico_zonas_verdes = 'grafico forestal.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 
 
@@ -377,6 +395,10 @@ plt.xlabel("Provincia")
 plt.legend(title="Tipo de Suelo")
 
 plt.show()
+nombre_archivo_grafico_zonas_verdes = 'usos de suelo.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 
 
@@ -391,6 +413,10 @@ plt.title("Matriz de correlación entre usos del suelo (2023)")
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0) 
 plt.show()
+nombre_archivo_grafico_zonas_verdes = 'matriz de correlacion.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
 
 datos_actualizados = pd.DataFrame(datos_actualizados)
 df_sin_cae = datos_actualizados[~datos_actualizados['provincia'].isin(['CAE'])]
@@ -402,4 +428,10 @@ plt.title("Promedio de superficie protegida por provincia")
 plt.xlabel("Superficie protegida")
 plt.ylabel("Provincia") 
 plt.tight_layout()
+plt.show()
+pnombre_archivo_grafico_zonas_verdes = 'grafico especial proteccion.png'
+ruta_guardado_grafico_zonas_verdes = os.path.join(carpeta_graficos, nombre_archivo_grafico_zonas_verdes)
+plt.savefig(ruta_guardado_grafico_zonas_verdes)
+plt.close()
+
 
