@@ -28,8 +28,10 @@ El objetivo principal es comprender la presencia de espacios verdes entre las tr
 
 EDA_ZONAS_VERDES
 ├── data_zonas_verdes/                     # Bases de datos en CSV
-├── img_zonas_verdes/                      # Gráficos y visualizaciones
+├── graficos_zonas_verdes/                 # Graficos y visualizaciones
+├── img_zonas_verdes/                      # Imágenes
 └── jupiter_zonas_verdes/                  # Notebook del análisis principal
+└── Main zonas verdes                      # Script
 
 
         🌿 Datos Analizados     

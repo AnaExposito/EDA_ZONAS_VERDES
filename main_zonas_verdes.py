@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-carpeta_graficos = 'graficos_eda_zonas_verdes'
+carpeta_graficos = 'graficos_zonas_verdes'
 os.makedirs(carpeta_graficos, exist_ok=True)
 
 print ("Zonas verdes en el País Vasco")
